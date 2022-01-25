@@ -5,18 +5,19 @@ Martin Campillo
 * +33 7 50 41 51 94
 * av. stalingrad 103, 1000, brussels
 
-## education
-* **2019 → 2022: master @[erg](httsp://erg.be), brussels**
-```
-Media Arts (Y. Bernard, J. Dutertre & M. Wathieu)
-Sculpture (D. Evrard)
-Art practive and Critical Tools (D. Evrard, E. Angenot, E Ivory Weber, G. Wouété)
-```
-* **2016 → 2019: bachelor @[erg](httsp://erg.be), brussels**
-```
-Media Arts (Y. Bernard, J. Dutertre & M. Wathieu)
-Sculpture (D. Evrard)
-Art practive and Critical Tools (D. Evrard, E. Angenot, E Ivory Weber, G. Wouété)
-```
-* **2014 ↓ 2016: bts graphic design (digital) @[saint joseph les maristes](http://www.stjomaristes.com/fr/page/dn-made-mention-numerique)**
-* **2011: baccalaureat (economy) @[lycée vauvenargues](https://www.lyc-vauvenargues.ac-aix-marseille.fr/spip-lyc-lp/), aix en provence**
+## what i did
+* 2022 → 🎓 master thesis in media arts at erg, brussels
+* 2019 → 🎓 pool contest, at 19, brussels
+* 2018 → 🎓 bachelor in media arts at erg, brussels
+* 2015 → 🎓 advanced technician certificate in digital 
+* 2021 → 🎥🌐 Magma Festival at lieu commun, toulouse
+* 2021 → 🎥🌐 Magma Festival at magcp, cajarc
+* 2020 → 💙 (right in) the feels, erg galerie, brussels
+* 2019 → 🔮 𝔞𝔩𝔤𝔬𝔪𝔞𝔫𝔠𝔦𝔞, erg galerie, brussels
+* 2019 → 🫂 ENSEMBLE, w/ Mathilde Fernandez & Cecile Di Giovanni, palais de tokyo, paris
+* 2020 → ⚒️ Signal, la friche de la belle de mai, marseille
+* 2021 → 🎨 labo demo#21 "fermé 24/7", centre wallonie bruxelles, paris
+* 2021 → interneship w/ julien dutertre, atelier 21, bruxelles
+* 2019 → 👨‍🏫 teaching arduino and processing, maison des arts de molembeek, brussels
+* 2018 → technopaganism, workshop at erg, brussels
+
