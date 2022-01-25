@@ -6,15 +6,18 @@ Martin Campillo
 * av. stalingrad 103, 1000, brussels
 
 ## what i did
+This list contains my `🎓 education` credentials, my `👨‍🏫 teaching` experience, `⚒️ technical assitance` for various projects. You can sort the list on [my website](http://martin.copyright.rip/cv/)
+
 * 2022 → 🎓 master thesis in media arts at erg, brussels
 * 2019 → 🎓 pool contest, at 19, brussels
 * 2018 → 🎓 bachelor in media arts at erg, brussels
-* 2015 → 🎓 advanced technician certificate in digital 
+* 2015 → 🎓 advanced technician certificate in digital graphic design, saint joseph les maristes, marseille
 * 2021 → 🎥🌐 Magma Festival at lieu commun, toulouse
 * 2021 → 🎥🌐 Magma Festival at magcp, cajarc
 * 2020 → 💙 (right in) the feels, erg galerie, brussels
 * 2019 → 🔮 𝔞𝔩𝔤𝔬𝔪𝔞𝔫𝔠𝔦𝔞, erg galerie, brussels
 * 2019 → 🫂 ENSEMBLE, w/ Mathilde Fernandez & Cecile Di Giovanni, palais de tokyo, paris
+* 2021 → ⚒️ Younes Baba Ali, ?, lyon
 * 2020 → ⚒️ Signal, la friche de la belle de mai, marseille
 * 2021 → 🎨 labo demo#21 "fermé 24/7", centre wallonie bruxelles, paris
 * 2021 → interneship w/ julien dutertre, atelier 21, bruxelles
