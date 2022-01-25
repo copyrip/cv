@@ -1,0 +1,89 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>martin campillo's cv</title>
+</head>
+<body>
+    <h1 id="martin-campillo">Martin Campillo</h1>
+    <ul class="incremental">
+        <li><a href="mailto:martin@copyright.rip" class="email">martin@copyright.rip</a></li>
+        <li>+33 7 50 41 51 94</li>
+        <li>av. stalingrad 103, 1000, brussels</li>
+    </ul>
+    <!--
+        <h2 id="what-i-did">what i did</h2>
+
+        <p>This list contains my <code>🎓 education</code> credentials, my <code>👨‍🏫 teaching</code> experience, <code>⚒️ technical assitance</code> for various projects. You can also find here some <code>👨‍💻 web development</code> gigs and <code>🎥 streaming consulting</code>. You can sort the list on <a href="http://martin.copyright.rip/cv/">my website</a></p>
+
+    -->
+
+    <form id="choices">
+        <label>education</label><input type="checkbox" name="ed" checked/>
+        <label>teaching</label><input type="checkbox" name="school" checked/>
+        <label>technical assistance</label><input type="checkbox" name="tech" checked/>
+        <label>exhibitions</label><input type="checkbox" name="ex" checked/>
+        <label>streaming consulting</label><input type="checkbox" name="stream" checked/>
+        <label>development</label><input type="checkbox" name="dev" checked/>
+    </form>
+
+
+    <ul class="incremental">
+        <li class="ed">
+            <dt>2022 → 🎓 master thesis in media arts at erg, brussels</dt>
+        </li>
+        <li class="ex">
+            <dt>2021 → 🎨 labo demo#21 “fermé 24/7”, centre wallonie bruxelles, paris</li>
+        <li class="stream">
+            <dt>2021 → 🎥🌐 festival court bouillon, at point culture, bruxelles</li>
+        <li class="stream">2021 → 🎥🌐 festival court bouillon, at point culture, bruxelles</li>
+        <li class="stream">2021 → 🎥🌐 Magma Festival at magcp, cajarc</li>
+        <li class="stream">2021 → 🎥🌐 Magma Festival at lieu commun, toulouse</li>
+        <li class="tech">2021 → ⚒️ Younes Baba Ali, ?, lyon</li>
+        <li class="tech">2021 → interneship w/ julien dutertre, atelier 21, bruxelles</li>
+        <li class="ex">2020 → 💙 (right in) the feels, erg galerie, brussels</li>
+        <li class="tech">2020 → ⚒️ Signal, la friche de la belle de mai, marseille</li>
+        <li class="ex">2019 → 🫂 ENSEMBLE, w/ Mathilde Fernandez &amp; Cecile Di Giovanni, palais de tokyo, paris</li>
+        <li class="ex">2019 → 🔮 𝔞𝔩𝔤𝔬𝔪𝔞𝔫𝔠𝔦𝔞, erg galerie, brussels</li>
+        <li class="school">2019 → 👨‍🏫 teaching arduino and processing, maison des arts de molembeek, brussels</li>
+        <li class="ed">2019 → 🎓 pool contest, at 19, brussels</li>
+        <li class="ed">2018 → 🎓 bachelor in media arts at erg, brussels</li>
+        <li class="school">2018 → technopaganism, workshop at erg, brussels</li>
+        <li class="school">2017 → 👨‍💻 <a href="https://erg.be">physical poetics</a> website development,for elke de rijke and alexander schellow</li>
+        <li class="dev">2017 → 👨‍💻 <a href="https://erg.be">https://erg.be</a> website development, with micheal murthaugh and theo boissonade</li>
+        <li class="ed">2015 → 🎓 advanced technician certificate in digital graphic design, saint joseph les maristes, marseille</li>
+    </ul>
+</body>
+
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    /*
+     * * display all
+     * * on change, sort
+     */
+
+            console.log("==== INPUTS ====");
+            $("form input[type=\"checkbox\"]").each(function(){
+                    console.log($(this).attr('name'));
+                    console.log($(this).val());
+                    //$("."+$(this).attr('name')).hide();
+            });
+
+            $("form input[type=\"checkbox\"]").change(function(){
+                    display($(this).attr('name'),$(this).is(':checked'));
+
+                    $(this).each(function(){
+                        console.log($(this).attr('name'));
+                        console.log($(this).is(':checked'));
+                        });
+            });
+
+        });
+
+    function display(c,is){
+            c = "."+c;
+            is ? $(c).show() : $(c).hide();
+    }
+
+</script>
+<html>
