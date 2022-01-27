@@ -19,35 +19,64 @@
    *
    */
 
+.rules {
+    position:absolute;
+    background:#EEE;
+}
+
+.horizontal {
+    width:100%;
+    height:1px;
+}
+
+.vertical {
+    width:1px;
+    height:100%;
+}
+
+.rules.top {
+    top:24px;
+    right:0;
+}
+
+.rules.left {
+    top:0;
+    right:30px;
+}
+
+.rules.right {
+    top:0;
+    left:30px;
+}
+
 html {
-    padding: 24px 12px 0 12px;
+    padding: 24px 30px 0 30px;
 }
 
 body {
+    line-height:18pt;
     font-size:12pt;
     font-family: "IBM Plex Serif", serif;
 }
 
 
     h1 {
-        font-size:14pt;
+        font-size:12pt;
         font-weight:bold;
     }
+
 
     ul {
         font-size:0;
         margin-left:0;
         margin:0;
-        line-height:0;
         list-style:none;
     }
 
     ul li {
         font-size:12pt;
-        line-height:12pt;
         margin: 0 0 0 0; 
     }
-
 
 
     ul li dt span {
@@ -72,13 +101,18 @@ body {
     </style>
 </head>
 <body>
+    <div class="rules horizontal top"></div>
+    <div class="rules vertical left"></div>
+    <div class="rules vertical right"></div>
     <header>
-    <h1 id="martin-campillo">Martin Campillo</h1>
+    <h1 id="martin-campillo">Martin Campillo 🖖</h1>
+    <br>
     <ul>
         <li>✉️ <a href="mailto:martin@copyright.rip" class="email">martin@copyright.rip</a></li>
         <li>📞 +33 7 50 41 51 94</li>
         <li>📍 av. stalingrad 103, <span>1000</span>, brussels</li>
     </ul>
+    <br>
     </header>
     <!--
         <h2 id="what-i-did">what i did</h2>
@@ -91,13 +125,15 @@ body {
         <label>education</label><input type="checkbox" name="ed" checked/>
         <label>teaching</label><input type="checkbox" name="school" checked/>
         <label>technical assistance</label><input type="checkbox" name="tech" checked/>
+        <br>
         <label>exhibitions</label><input type="checkbox" name="ex" checked/>
         <label>streaming consulting</label><input type="checkbox" name="stream" checked/>
         <label>development</label><input type="checkbox" name="dev" checked/>
     </form>
+    <br>
 
 
-    <ul>
+    <ul id="all">
         <li class="ed">
             <dt><span>2022</span>  🎓 master thesis in media arts at erg, brussels</dt>
             <dd>J't'aime bien mais. Tu commences à m'casser les couilles. J't'aime bien mais. Là, ta tête, j'peux plus la voir.<dd>
@@ -106,16 +142,16 @@ body {
             <dt><span>2021</span>  🎨 labo demo#21 “fermé 24/7”, centre wallonie bruxelles, paris</dt>
         </li>
         <li class="stream">
-            <dt><span>2021</span>  🎥🌐 festival court bouillon, at point culture, bruxelles</dt>
+            <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
         </li>
         <li class="stream">
-            <dt><span>2021</span>  🎥🌐 festival court bouillon, at point culture, bruxelles</dt>
+            <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
         </li>
         <li class="stream">
-            <dt><span>2021</span>  🎥🌐 Magma Festival at magcp, cajarc</dt>
+            <dt><span>2021</span>  ⏯️ Magma Festival at magcp, cajarc</dt>
         </li>
         <li class="stream">
-            <dt><span>2021</span>  🎥🌐 Magma Festival at lieu commun, toulouse</dt>
+            <dt><span>2021</span>  ⏯️ Magma Festival at lieu commun, toulouse</dt>
         </li>
         <li class="tech">
             <dt><span>2021</span>  ⚒️ Younes Baba Ali, ?, lyon</dt>
@@ -157,18 +193,25 @@ body {
             <dt><span>2015</span>  🎓 advanced technician certificate in digital graphic design, saint joseph les maristes, marseille</dt>
         </li>
     </ul>
+    <ul>
+        <li><b>idioms:</b> 🇫🇷 french (native), 🇬🇧 english (fluent, level C1), 🇪🇸 spanish (fluent, 4 years in barcelona)</li>
+        <li><b>languages: </b>🏴‍☠️ C, bash, Python, html/css/js, php, AppleScript, <i>Arduino</i></li>
+        <li><b>interests: </b>computers, internet, art, communication, media archeology.
 </body>
 
 <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-            /*
-                 * * display all
-                 * * on change, sort
-                 */
 
-            console.log("== init ==");
+    $(document).ready(function(){
+            $("ul#all li").hide();
+
+            $("form input[type=\"checkbox\"]").each(function(){
+                    display($(this).attr('name'),$(this).is(':checked'));
+                });
+            /* more infos */
+
             $("ul li dd").hide(); 
+
             $("ul li dt").mouseenter(function(){
                     $(this).next().slideDown(5);
                 });
@@ -177,6 +220,8 @@ body {
                     $(this).next().slideUp(3);
                 });
 
+
+            /* sorting */
 
             $("form input[type=\"checkbox\"]").change(function(){
                     display($(this).attr('name'),$(this).is(':checked'));
@@ -188,8 +233,10 @@ body {
             c = "."+c;
             is ? $(c).show() : $(c).hide();
         }
+/*
+ 
 
-
+*/
 
 </script>
 <html>
