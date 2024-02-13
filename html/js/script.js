@@ -50,7 +50,9 @@ function updateDate(){
 
   $("#date .hours").text(dt.getHours());
   $("#date .minutes").text(dt.getMinutes());
-  $("#date .seconds").text(dt.getSeconds());
+  dt.getSeconds() > 9 ?
+    $("#date .seconds").text(dt.getSeconds()):
+    $("#date .seconds").text('0'+dt.getSeconds());
 }
 
 updateDate();

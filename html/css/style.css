@@ -46,11 +46,13 @@
 }
 
 .rules.left {
+  height:370mm;
   top:0;
   left:30px;
 }
 
 .rules.right {
+  min-height:120%;
   top:0;
   left:210mm;
   margin-left:30px;
@@ -82,15 +84,17 @@ body {
 
 #sidebar {
   box-sizing:border-box;
-  width:70mm;
+  min-width:70mm;
   height:100%;
 
   padding: 4px 8px 0 8px;
 }
 
 #content {
-  display:none;
+}
 
+label {
+  cursor:pointer;
 }
 /* --- 2. colors --- */
 html {
@@ -104,6 +108,7 @@ body {
 
 #sidebar {
   background:lightgrey;
+  background:white;
 }
 
 a, a:visited {
@@ -131,6 +136,11 @@ body {
 h1 {
   font-size:12pt;
   font-weight:bold;
+}
+
+footer {
+
+  font-family: "Xanh Mono", monospace;
 }
 
 /* --- */
