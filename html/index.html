@@ -1,242 +1,170 @@
 <!doctype html>
 <head>
-    <meta charset="utf-8">
-    <title>martin campillo's cv</title>
+  <meta charset="utf-8">
+  <title>martin campillo's cv</title>
 
-    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
-    <style type="text/css">
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/init.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-@import url("./css/init.css");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Xanh+Mono&display=swap');
-
-  /*   MARTIN RESUME
-   *   ------------- 
-   *   
-   *   0. fonts
-   *   1. whites
-   *   2. header
-   *
-   *
-   */
-
-.rules {
-    position:absolute;
-    background:#EEE;
-}
-
-.horizontal {
-    width:100%;
-    height:1px;
-}
-
-.vertical {
-    width:1px;
-    height:100%;
-}
-
-.rules.top {
-    top:24px;
-    right:0;
-}
-
-.rules.left {
-    top:0;
-    right:30px;
-}
-
-.rules.right {
-    top:0;
-    left:30px;
-}
-
-html {
-    padding: 24px 30px 0 30px;
-}
-
-body {
-    line-height:18pt;
-    font-size:12pt;
-    font-family: "IBM Plex Serif", serif;
-}
-
-
-    h1 {
-        font-size:12pt;
-        font-weight:bold;
-    }
-
-
-    ul {
-        font-size:0;
-        margin-left:0;
-        margin:0;
-        list-style:none;
-    }
-
-    ul li {
-        font-size:12pt;
-        margin: 0 0 0 0; 
-    }
-
-
-    ul li dt span {
-        background:#DDD;
-        color:#111;
-
-        font-size:7pt;
-        font-family:'IBM Plex Mono', monospace;
-
-        border-radius:10px;
-        padding: 1px 2px;
-        margin: 0 4px 0 0;
-
-
-        vertical-align:center;
-    }
-
-    form {
-        margin: 0 0 0 0;
-    }
-
-    </style>
 </head>
-<body>
-    <div class="rules horizontal top"></div>
-    <div class="rules vertical left"></div>
-    <div class="rules vertical right"></div>
-    <header>
+<body class="">
+  <div class="rules horizontal top"></div>
+  <div class="rules vertical left"></div>
+  <div class="rules vertical right"></div>
+
+  <header>
     <h1 id="martin-campillo">Martin Campillo 🖖</h1>
     <br>
     <ul>
-        <li>✉️ <a href="mailto:martin@copyright.rip" class="email">martin@copyright.rip</a></li>
-        <li>📞 +33 7 50 41 51 94</li>
-        <li>📍 av. stalingrad 103, <span>1000</span>, brussels</li>
+      <li>✉️ <a href="mailto:martin@copyright.rip" class="email">martin@copyright.rip</a></li>
+      <li>🌐 <a href="http://martin.copyright.rip" target="_blank">martin.copyright.rip</a></li>
+      <li>📞 +33 7 50 41 51 94</li>
+      <li>📍 25 cours pierre puget, <span>1306</span>, marseille</li>
     </ul>
     <br>
-    </header>
-    <!--
-        <h2 id="what-i-did">what i did</h2>
+  </header>
+  <!--
+    <h2 id="what-i-did">what i did</h2>
 
-        <p>This list contains my <code>🎓 education</code> credentials, my <code>👨‍🏫 teaching</code> experience, <code>⚒️ technical assitance</code> for various projects. You can also find here some <code>👨‍💻 web development</code> gigs and <code>🎥 streaming consulting</code>. You can sort the list on <a href="http://martin.copyright.rip/cv/">my website</a></p>
+    <p>This list contains my <code>🎓 education</code> credentials, my <code>👨‍🏫 teaching</code> experience, <code>⚒️ technical assitance</code> for various projects. You can also find here some <code>👨‍💻 web development</code> gigs and <code>🎥 streaming consulting</code>. You can sort the list on <a href="http://martin.copyright.rip/cv/">my website</a></p>
 
-    -->
+  -->
 
-    <form id="choices">
-        <label>education</label><input type="checkbox" name="ed" checked/>
-        <label>teaching</label><input type="checkbox" name="school" checked/>
-        <label>technical assistance</label><input type="checkbox" name="tech" checked/>
-        <br>
-        <label>exhibitions</label><input type="checkbox" name="ex" checked/>
-        <label>streaming consulting</label><input type="checkbox" name="stream" checked/>
-        <label>development</label><input type="checkbox" name="dev" checked/>
-    </form>
+  <form id="choices">
+    <label>education</label><input type="checkbox" name="ed" checked/>
+    <label>teaching</label><input type="checkbox" name="school" checked/>
+    <label>technical assistance</label><input type="checkbox" name="tech" checked/>
     <br>
+    <label>exhibitions</label><input type="checkbox" name="ex" checked/>
+    <label>streaming consulting</label><input type="checkbox" name="stream" checked/>
+    <label>development</label><input type="checkbox" name="dev" checked/>
+  </form>
+  <br>
 
 
-    <ul id="all">
-        <li class="ed">
-            <dt><span>2022</span>  🎓 master thesis in media arts at erg, brussels</dt>
-            <dd>J't'aime bien mais. Tu commences à m'casser les couilles. J't'aime bien mais. Là, ta tête, j'peux plus la voir.<dd>
-        </li>
-        <li class="ex">
-            <dt><span>2021</span>  🎨 labo demo#21 “fermé 24/7”, centre wallonie bruxelles, paris</dt>
-        </li>
-        <li class="stream">
-            <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
-        </li>
-        <li class="stream">
-            <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
-        </li>
-        <li class="stream">
-            <dt><span>2021</span>  ⏯️ Magma Festival at magcp, cajarc</dt>
-        </li>
-        <li class="stream">
-            <dt><span>2021</span>  ⏯️ Magma Festival at lieu commun, toulouse</dt>
-        </li>
-        <li class="tech">
-            <dt><span>2021</span>  ⚒️ Younes Baba Ali, ?, lyon</dt>
-        </li>
-        <li class="tech">
-            <dt><span>2021</span>  interneship w/ julien dutertre, atelier 21, bruxelles</dt>
-        </li>
-        <li class="ex">
-            <dt><span>2020</span>  💙 (right in) the feels, erg galerie, brussels</dt>
-        </li>
-        <li class="tech">
-            <dt><span>2020</span>  ⚒️ Signal, la friche de la belle de mai, marseille</dt>
-        </li>
-        <li class="ex">
-            <dt><span>2019</span>  🫂 ENSEMBLE, w/ Mathilde Fernandez &amp; Cecile Di Giovanni, palais de tokyo, paris</dt>
-        </li>
-        <li class="ex">
-            <dt><span>2019</span>  🔮 𝔞𝔩𝔤𝔬𝔪𝔞𝔫𝔠𝔦𝔞, erg galerie, brussels</dt>
-        </li>
-        <li class="school">
-            <dt><span>2019</span>  👨‍🏫 teaching arduino and processing, maison des arts de molembeek, brussels</dt>
-        </li>
-        <li class="ed">
-            <dt><span>2019</span>  🎓 pool contest, at 19, brussels</dt>
-        </li>
-        <li class="ed">
-            <dt><span>2018</span>  🎓 bachelor in media arts at erg, brussels</dt>
-        </li>
-        <li class="school">
-            <dt><span>2018</span>  technopaganism, workshop at erg, brussels</dt>
-        </li>
-        <li class="school">
-            <dt><span>2017</span>  👨‍💻 <a href="https://erg.be">physical poetics</a> website development,for elke de rijke and alexander schellow</dt>
-        </li>
-        <li class="dev">
-            <dt><span>2017</span>  👨‍💻 <a href="https://erg.be">https://erg.be</a> website development, with micheal murthaugh and theo boissonade</dt>
-        </li>
-        <li class="ed">
-            <dt><span>2015</span>  🎓 advanced technician certificate in digital graphic design, saint joseph les maristes, marseille</dt>
-        </li>
-    </ul>
+  <ul id="all">
+    <li class="ed">
+      <dt><span>2022</span>  🎓 master thesis in media arts at erg, brussels</dt>
+      <dd>J't'aime bien mais. Tu commences à m'casser les couilles. J't'aime bien mais. Là, ta tête, j'peux plus la voir.<dd>
+    </li>
+    <li class="ex">
+      <dt><span>2021</span>  🎨 labo demo#21 “fermé 24/7”, centre wallonie bruxelles, paris</dt>
+    </li>
+    <li class="stream">
+      <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
+    </li>
+    <li class="stream">
+      <dt><span>2021</span>  ⏯️ festival court bouillon, at point culture, bruxelles</dt>
+    </li>
+    <li class="stream">
+      <dt><span>2021</span>  ⏯️ Magma Festival at magcp, cajarc</dt>
+    </li>
+    <li class="stream">
+      <dt><span>2021</span>  ⏯️ Magma Festival at lieu commun, toulouse</dt>
+    </li>
+    <li class="tech">
+      <dt><span>2021</span>  ⚒️ Younes Baba Ali, ?, lyon</dt>
+    </li>
+    <li class="tech">
+      <dt><span>2021</span>  interneship w/ julien dutertre, atelier 21, bruxelles</dt>
+    </li>
+    <li class="ex">
+      <dt><span>2020</span>  💙 (right in) the feels, erg galerie, brussels</dt>
+    </li>
+    <li class="tech">
+      <dt><span>2020</span>  ⚒️ Signal, la friche de la belle de mai, marseille</dt>
+    </li>
+    <li class="ex">
+      <dt><span>2019</span>  🫂 ENSEMBLE, w/ Mathilde Fernandez &amp; Cecile Di Giovanni, palais de tokyo, paris</dt>
+    </li>
+    <li class="ex">
+      <dt><span>2019</span>  🔮 𝔞𝔩𝔤𝔬𝔪𝔞𝔫𝔠𝔦𝔞, erg galerie, brussels</dt>
+    </li>
+    <li class="school">
+      <dt><span>2019</span>  👨‍🏫 teaching arduino and processing, maison des arts de molembeek, brussels</dt>
+    </li>
+    <li class="ed">
+      <dt><span>2019</span>  🎓 pool contest, at 19, brussels</dt>
+    </li>
+    <li class="ed">
+      <dt><span>2018</span>  🎓 bachelor in media arts at erg, brussels</dt>
+    </li>
+    <li class="school">
+      <dt><span>2018</span>  technopaganism, workshop at erg, brussels</dt>
+    </li>
+    <li class="school">
+      <dt><span>2017</span>  👨‍💻 <a href="https://erg.be">physical poetics</a> website development,for elke de rijke and alexander schellow</dt>
+    </li>
+    <li class="dev">
+      <dt><span>2017</span>  👨‍💻 <a href="https://erg.be">https://erg.be</a> website development, with micheal murthaugh and theo boissonade</dt>
+    </li>
+    <li class="ed">
+      <dt><span>2015</span>  🎓 advanced technician certificate in digital graphic design, saint joseph les maristes, marseille</dt>
+    </li>
+  </ul>
+  <!--
+    <br>
+    <br>
+    <br>
     <ul>
-        <li><b>idioms:</b> 🇫🇷 french (native), 🇬🇧 english (fluent, level C1), 🇪🇸 spanish (fluent, 4 years in barcelona)</li>
-        <li><b>languages: </b>🏴‍☠️ C, bash, Python, html/css/js, php, AppleScript, <i>Arduino</i></li>
-        <li><b>interests: </b>computers, internet, art, communication, media archeology.
+    <li><b>idioms:</b> 🇫🇷 french (native), 🇬🇧 english (fluent, level C1), 🇪🇸 spanish (fluent, 4 years in barcelona)</li>
+    <li><b>languages: </b>🏴‍☠️ C, bash, Python, html/css/js, php, AppleScript, <i>Arduino</i></li>
+    <li><b>interests: </b>computers, internet, art, communication, media archeology.
+  -->
+  <footer>
+    <button id="dark">dark</button>
+  </footer>
 </body>
 
 <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<!--
 <script type="text/javascript">
 
-    $(document).ready(function(){
-            $("ul#all li").hide();
+  $(document).ready(function(){
 
-            $("form input[type=\"checkbox\"]").each(function(){
-                    display($(this).attr('name'),$(this).is(':checked'));
-                });
-            /* more infos */
+    $("#dark").click(function() {
+      if($("body").hasClass("dark")){
+	$("body").removeClass("dark");
+	$(this).text("dark");
+      }
+      else {
+	$("body").addClass("dark");
+	$(this).text("light");
+      }
+      });
 
-            $("ul li dd").hide(); 
+    $("ul#all li").hide();
 
-            $("ul li dt").mouseenter(function(){
-                    $(this).next().slideDown(5);
-                });
+    $("form input[type=\"checkbox\"]").each(function(){
+      display($(this).attr('name'),$(this).is(':checked'));
+    });
+    /* more infos */
 
-            $("ul li dt").mouseleave(function(){
-                    $(this).next().slideUp(3);
-                });
+    $("ul li dd").hide(); 
+
+    $("ul li dt").mouseenter(function(){
+      $(this).next().slideDown(5);
+    });
+
+      $("ul li dt").mouseleave(function(){
+	$(this).next().slideUp(3);
+      });
 
 
-            /* sorting */
+      /* sorting */
 
-            $("form input[type=\"checkbox\"]").change(function(){
-                    display($(this).attr('name'),$(this).is(':checked'));
-                });
+      $("form input[type=\"checkbox\"]").change(function(){
+	display($(this).attr('name'),$(this).is(':checked'));
+      });
 
-        });
+    });
 
-    function display(c,is){
-            c = "."+c;
-            is ? $(c).show() : $(c).hide();
-        }
-/*
- 
-
-*/
-
+  function display(c,is){
+    c = "."+c;
+    is ? $(c).show() : $(c).hide();
+  }
 </script>
+-->
 <html>
