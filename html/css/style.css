@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Xanh+Mono&display=swap');
 
 /*   MARTIN RESUME
  *   ------------- 
  *   
- *   0. fonts
+ *   0. utils
+ *   	* dark mode
+ *   	* rules
+ *   1. layout
  *   1. whites
  *   2. header
  *
  *
  */
 
+/* --- 0. utils --- */
 .dark {
   color:#fff;
   background:#000;
@@ -35,32 +39,101 @@
   right:0;
 }
 
-.rules.left {
-  top:0;
-  right:30px;
+.rules.bottom {
+  top:297mm;
+  right:0;
+  margin-top:24px;
 }
 
-.rules.right {
+.rules.left {
   top:0;
   left:30px;
 }
 
+.rules.right {
+  top:0;
+  left:210mm;
+  margin-left:30px;
+}
+
+/* --- 1. layout --- */
+
 html {
+  
   padding: 24px 30px 0 30px;
 }
 
 body {
-  line-height:18pt;
-  font-size:12pt;
-  font-family: "IBM Plex Serif", cursive;
+  box-sizing:border-box;
+
+  width:210mm;
+  aspect-ratio:1/1.41;
+  height:297mm;
+
+  max-width:210mm;
+  max-height:297mm; 
+
+
+  display:flex;
+
+
+  margin-bottom:100px;
 }
 
+#sidebar {
+  box-sizing:border-box;
+  width:70mm;
+  height:100%;
+
+  padding: 4px 8px 0 8px;
+}
+
+#content {
+  display:none;
+
+}
+/* --- 2. colors --- */
+html {
+  background-color:rgba(0,0,0,0.1);
+  background-color:rgba(255,255,255,1);
+}
+
+body {
+  background-color:rgba(255,255,255,1);
+}
+
+#sidebar {
+  background:lightgrey;
+}
+
+a, a:visited {
+  color:#00FF;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+/* --- 2. typography --- */
+
+body {
+  line-height:18pt;
+  font-size:12pt;
+
+  font-family: serif;
+  font-family: "Coupeur Monospace", monospace;
+  font-family: "Xanh Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Serif", serif;
+}
 
 h1 {
   font-size:12pt;
   font-weight:bold;
 }
 
+/* --- */
 
 ul {
   font-size:0;
@@ -80,7 +153,6 @@ ul li dt span {
   color:#111;
 
   font-size:7pt;
-  font-family:'IBM Plex Mono', cursive;
 
   border-radius:10px;
   padding: 1px 2px;
@@ -92,5 +164,31 @@ ul li dt span {
 
 form {
   margin: 0 0 0 0;
+}
+
+.screen {
+  display:inline;
+}
+.print {
+  display:none;
+}
+
+/* ==== PRINTING ==== */
+
+@media print {
+  html {
+    padding:0;
+  }
+
+  .rules {
+    display:none;
+  }
+
+  .screen {
+    display:none;
+  }
+  .print {
+    display:inline;
+  }
 }
 

@@ -41,3 +41,20 @@ function display(c,is){
   c = "."+c;
   is ? $(c).show() : $(c).hide();
 }
+
+function updateDate(){
+  var dt = new Date();
+  $("#date #day").text(dt.getDate());
+  $("#date #month").text(dt.getMonth() + 1);
+  $("#date #year").text(dt.getFullYear());
+
+  $("#date .hours").text(dt.getHours());
+  $("#date .minutes").text(dt.getMinutes());
+  $("#date .seconds").text(dt.getSeconds());
+}
+
+updateDate();
+
+setInterval(function(){
+  updateDate()
+},1000);
