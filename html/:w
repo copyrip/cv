@@ -72,7 +72,8 @@
     <input type="radio" value="test" name="overall" id="c"></input><label for="c">streamer</label>,
     <input type="radio" value="test" name="overall" id="d"></input><label for="d">teacher</label> living in Marseilles, and working in <a href="https://www.instagram.com/atelier.sulfur/" target="_blank">atelier sulfur</a>.
     </p>
-    <p>I develop custom made technical solutions for artisitc projects, publish websites and I'm interested in media archeology, internet publishing politics and technical pedagogy</p>
+    <p>I develop custom made technical solutions for artisitc projects,</p>
+    <p>publish websites
 
     <br>
     <br>
@@ -81,7 +82,7 @@
     <ul id="all">
       <li class="ed">
 	<dt><span>2022</span>  🎓 master thesis in media arts at erg, brussels</dt>
-	<dd><a href="">README.md</a>, my master thesis directed by <a href="#">Mr. Pimpant</a>. Media Arts, prof. Julien Dutertre, Yves Bernard, Marc Wathieu. Sculpture, prof. David Evrard.</dd>
+	<dd>J't'aime bien mais. Tu commences à m'casser les couilles. J't'aime bien mais. Là, ta tête, j'peux plus la voir.<dd>
       </li>
       <li class="ed">
 	<dt><span>2022</span>  🎓 master thesis in media arts at erg, brussels</dt>

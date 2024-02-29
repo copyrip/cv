@@ -16,8 +16,12 @@ $(document).ready(function(){
   $("form input[type=\"checkbox\"]").each(function(){
     display($(this).attr('id'),$(this).is(':checked'));
   });
-  /* more infos */
 
+
+  /* more infos */
+ 
+$('dt + dd').prev('dt').append('<span>&rarr;</span>');
+  
   $("ul li dd").hide(); 
 
   $("ul li dt").mouseenter(function(){
