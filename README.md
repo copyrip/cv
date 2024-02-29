@@ -14,3 +14,7 @@ A simple web page about my life.
 * can you control the name of the final PDF ? page title
 * stats ?
 
+## content
+
+* media archeology
+* 

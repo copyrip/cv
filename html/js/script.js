@@ -14,7 +14,7 @@ $(document).ready(function(){
   $("ul#all li").hide();
 
   $("form input[type=\"checkbox\"]").each(function(){
-    display($(this).attr('name'),$(this).is(':checked'));
+    display($(this).attr('id'),$(this).is(':checked'));
   });
   /* more infos */
 
@@ -32,8 +32,11 @@ $(document).ready(function(){
   /* sorting */
 
   $("form input[type=\"checkbox\"]").change(function(){
-    display($(this).attr('name'),$(this).is(':checked'));
+    display($(this).attr('id'),$(this).is(':checked'));
   });
+
+  /* random tag order */
+  $("#langs").append($('#langs li').sort(() => Math.random() - 0.5));
 
 });
 

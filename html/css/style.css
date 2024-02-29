@@ -85,9 +85,39 @@ body {
 #sidebar {
   box-sizing:border-box;
   min-width:70mm;
+  max-width:70mm;
   height:100%;
 
   padding: 4px 8px 0 8px;
+  /*background:red !important;*/
+  overflow:hidden;
+}
+
+#langs li {
+  display:inline-block;
+  font-family:monospace;
+  font-size:10pt;
+
+  color:#fff;
+
+  background:lightblue;
+  border-radius:10px;
+  margin-right:8px;
+
+  padding: 0px 8px;
+
+}
+
+#langs li:after {
+  /*
+  content:",\00a0";
+  */
+}
+
+#langs li:last-child:after {
+  /*
+  content:".";
+  */
 }
 
 #content {
@@ -139,6 +169,8 @@ h1 {
 }
 
 footer {
+  position:absolute;
+  bottom:0;
 
   font-family: "Xanh Mono", monospace;
 }
@@ -181,6 +213,12 @@ form {
 }
 .print {
   display:none;
+}
+
+
+/* === to sort === */
+#comp {
+  width:15mm;
 }
 
 /* ==== PRINTING ==== */
